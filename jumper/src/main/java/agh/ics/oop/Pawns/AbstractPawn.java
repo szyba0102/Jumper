@@ -4,7 +4,7 @@ import agh.ics.oop.Board;
 import agh.ics.oop.Vector2d;
 
 public abstract class AbstractPawn {
-    //protected String PhotoFilePath;
+
     protected Vector2d position;
     protected Board board;
 
