@@ -1,4 +1,4 @@
-package agh.ics.oop.Pawns;
+package agh.ics.oop.pawns;
 
 import agh.ics.oop.Board;
 import agh.ics.oop.Vector2d;

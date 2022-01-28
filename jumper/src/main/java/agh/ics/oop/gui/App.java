@@ -1,7 +1,7 @@
 package agh.ics.oop.gui;
 import agh.ics.oop.*;
-import agh.ics.oop.Pawns.AbstractPawn;
-import agh.ics.oop.Pawns.WhitePawn;
+import agh.ics.oop.pawns.AbstractPawn;
+import agh.ics.oop.pawns.WhitePawn;
 import javafx.application.Application;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;

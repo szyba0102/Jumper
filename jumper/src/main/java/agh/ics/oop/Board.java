@@ -1,8 +1,8 @@
 package agh.ics.oop;
 
-import agh.ics.oop.Pawns.AbstractPawn;
-import agh.ics.oop.Pawns.BlackPawn;
-import agh.ics.oop.Pawns.WhitePawn;
+import agh.ics.oop.pawns.AbstractPawn;
+import agh.ics.oop.pawns.BlackPawn;
+import agh.ics.oop.pawns.WhitePawn;
 
 import java.util.HashMap;
 
