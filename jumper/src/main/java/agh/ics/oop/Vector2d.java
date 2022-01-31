@@ -34,13 +34,6 @@ public class Vector2d {
         return Objects.hash(this.x, this.y);
     }
 
-    public int compareByXY(Vector2d other) {
-        if (this.x == other.x) {
-            return Integer.compare(this.y, other.y);
-        }
-        else if (this.x > other.x) return 1;
-        else return -1;
-    }
 
     public int getX() {
         return this.x;
