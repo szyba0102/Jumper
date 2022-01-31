@@ -7,10 +7,11 @@ import agh.ics.oop.pawns.WhitePawn;
 import java.util.HashMap;
 
 public class Board {
-    private final int height = 8;
-    private final int width = 8;
-    private HashMap<Vector2d, AbstractPawn> pawnsHashMap = new HashMap<Vector2d,AbstractPawn>();
+    private final HashMap<Vector2d, AbstractPawn> pawnsHashMap = new HashMap<Vector2d,AbstractPawn>();
     public Board(){
+        createBoard();
+    }
+    public void createBoard(){
         for(int i=1; i<9; i++){
             for(int j=1; j<3; j++){
                 Vector2d vec = new Vector2d(i,j);
@@ -25,7 +26,6 @@ public class Board {
             }
         }
     }
-
     public void changeOfPositionOfPawn(AbstractPawn pawn, Vector2d  newPosition){
         pawnsHashMap.remove(pawn.getPosition());
         pawn.move(newPosition);
@@ -36,10 +36,7 @@ public class Board {
         if(pawnsHashMap.containsKey(nextPosition)){
             return -1;
         }
-        if(nextPosition.getX() > 8 || nextPosition.getX() < 0 || nextPosition.getY() >8 || nextPosition.getY() < 0 ){
-            return -1;
-        }
-        if(lastPosition.subtract(nextPosition).sumCoords() == 1){
+        if(lastPosition.subtract(nextPosition).sumCoords() == 1 && pawnsHashMap.containsKey(lastPosition)){
             return 0;
         }
         if(lastPosition.subtract(nextPosition).sumCoords() == 2){
@@ -72,7 +69,7 @@ public class Board {
         return -1;
     }
 
-    public AbstractPawn ObjectAt(Vector2d vector2d){
+    public AbstractPawn objectAt(Vector2d vector2d){
         return pawnsHashMap.get(vector2d);
     }
 
