@@ -18,7 +18,7 @@ public class WhitePawn extends AbstractPawn{
     @Override
     public String getChosenPictureFilePath() {return "src/main/resources/chosenwhitepawn.png";}
 
-    // black pawns are always played by second player
+    // white pawns are always played by second player
     @Override
     public int getPlayerNumber() {return 1;}
 
