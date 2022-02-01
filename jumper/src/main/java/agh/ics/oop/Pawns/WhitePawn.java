@@ -9,20 +9,18 @@ public class WhitePawn extends AbstractPawn{
         super(position,board);
     }
 
+    // functions returning file paths to images representing pawn
     @Override
     public String getPictureFilePath() {
         return "src/main/resources/whitepawn.png";
     }
 
     @Override
-    public String getChosenPictureFilePath() {
-        return "src/main/resources/chosenwhitepawn.png";
-    }
+    public String getChosenPictureFilePath() {return "src/main/resources/chosenwhitepawn.png";}
 
+    // black pawns are always played by second player
     @Override
-    public int getPlayerNumber() {
-        return 1;
-    }
+    public int getPlayerNumber() {return 1;}
 
 
 }

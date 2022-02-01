@@ -12,10 +12,6 @@ public class Vector2d {
         this.y = y;
     }
 
-    public String toString(){
-        return "(" + this.x + "," + this.y + ")";
-    }
-
     public Vector2d add(Vector2d other){
         return new Vector2d(this.x+other.x,this.y+other.y);
     }
@@ -33,7 +29,6 @@ public class Vector2d {
     public int hashCode() {
         return Objects.hash(this.x, this.y);
     }
-
 
     public int getX() {
         return this.x;
