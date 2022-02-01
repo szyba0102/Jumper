@@ -37,6 +37,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+        
         // beginning setup
         gridPane.setAlignment(Pos.CENTER);
         createBoard();
