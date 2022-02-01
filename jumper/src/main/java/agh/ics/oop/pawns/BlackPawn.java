@@ -20,7 +20,7 @@ public class BlackPawn extends AbstractPawn{
         return "src/main/resources/chosenblackpawn.png";
     }
 
-    // white pawns are always played by first player
+    // black pawns are always played by second player
     @Override
     public int getPlayerNumber() {
         return 2;
