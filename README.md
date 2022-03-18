@@ -22,15 +22,6 @@ pierwszy tego dokona − wygrywa. Nie ma możliwości gry remisowej.
   - pionki nie biją się wzajemnie.
 
 **Wykonanie ruchu:**
-
-**WERSJA ŁATWIEJSZA**
-  - wybierz pionka za pomocą strzałek, pole wybranego pionka zmienia kolor,
-  - wprowadź sekwencję ruchów w pole tekstowe, naciśnij przycisk startujący, jeśli
-  sekwencja jest poprawna, ruch wykonuje się, jeśli nie, wyświetla się komunikat o
-  konieczności zmiany ruchów.
-  - liczba punktów: 2
-  
-**WERSJA TRUDNIEJSZA**
   - wybierz pionka klikając na niego, pole wybranego pionka zmienia kolor,
   - po wybraniu pionka wskaż, kolejno klikając na pola, na jakie pola ma skakać, jeśli któryś
   ze skoków nie będzie zgodny z zasadami gry, wyświetla się komunikat o niepoprawnym
